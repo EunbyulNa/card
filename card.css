@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*main-logo*/
+#main-logo {
+  background-color: rgb(216, 235, 238);
+  height: 200px;
+  text-indent: -9999px;
+}
+
+#main-logo>h1 {
+  background: url('img/header2.jpg') center no-repeat;
+  height: 200px;
+}
+
+header {
+border-bottom: 1px solid rgb(19,33,66,.1);
+}
+
+#header_wrap {
+  width: 1200px;
+  height: 70px;
+  margin: auto;
+}
+
+/*menu_btn*/
+.menu_btn {
+  width: 50px;
+  float: left;
+}
+
+.menu_btn > a {
+display: block;
+}
+
+.menu_btn > a > i {
+color: #132142;
+font-size: 30px;
+line-height: 70px;
+padding: 0 10px;
+}
+
+/*menu_logo*/
+.menu_logo {
+  width: 200px;
+  height: 70px;
+  float: left;
+}
+
+.menu_logo > a {
+  display: block;
+  margin: 20px 0 0 25px;
+  background: url('img/logo_head2.png')  no-repeat;
+  width: 112px;
+  height: 24px;
+  text-indent: -9999px;
+}
+
+/*nav_wrap*/
+.nav_wrap {
+  height: 70px;
+}
+
+/*main_nav*/
+ul.main_nav > li {
+  float: left;
+  text-align: center;
+  padding: 0 20px;
+}
+
+ul.main_nav > li > a {
+  color: #132142;
+  font-size: 18px;
+  line-height: 70px;
+  font-weight: bold;
+}
+
+ul.main_nav > li > a:hover {
+  color: rgb(19,33,66,.7);
+}
+
+/*main-util*/
+ul.main_util {
+  float: right;
+}
+
+ul.main_util > a {
+  padding: 0 10px;
+  line-height: 70px;
+  color: rgb(19,33,66,.7);
+}
+
+ul.main_util > a:hover {
+  color: #132142;
+}
+
+ul.main_util > a > i {
+  color: #132142;
+}
+
+ul.main_util > a > i:hover {
+  color: rgb(19,33,66,.7);
+}
+
+
+/*slideshow*/
+#wrapper {
+  position: relative;
+}
+
+.sliders {
+  width: 1200px;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.sliders li {
+float: left;
+}
+
+/*container*/
+#thumnail-wrap {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+
+
+}
+/*thumbnail*/
+.thumbnails {
+  position: absolute;
+  top: -40px;
+  left: 20px;
+  width: 1200px;
+  height: 170px;
+  overflow: hidden;
+}
+
+.thumbnails li {
+  float: left;
+  margin-right: 15px;
+
+}
+
+.thumbnails li:last-child {
+  margin-right: 0;
+}
+
+.thumbnails li img {
+  border-radius: 0 10px 0 10px;
+}
+/*main_articles*/
+#main_articles {
+overflow: hidden;
+width: 1200px;
+margin: auto;
+margin-top: 180px;
+}
+
+/*left_contents*/
+.left_contents {
+  float: left;
+  border-top: 1px solid rgb(19,33,66);
+  width: 750px;
+}
+
+.left_contents h1 {
+  padding: 20px 0;
+}
+
+.articles {
+margin-bottom: 60px;
+}
+
+
+.articles h3 {
+  font-size: 15px;
+  padding: 10px 0;
+  color: rgb(236,86,143);
+}
+
+.article_txt h2 {
+  padding: 10px 0;
+}
+
+/*right_contents*/
+.right_contents {
+
+
+  border: 1px solid red;
+  width: 400px;
+  float: right
+}
+
+.right_article img{
+max-width: 100%;
+}
+
+.right_lists {
+
+}
+
+.right_lists li {
+  overflow: hidden;
+  border: 1px solid red;
+}
+.list_imgs {
+  width: 150px;
+  float: left;
+}
+
+.list_imgs > a > img {
+  max-width: 100%;
+}
+
+.list_txt {
+  width: 200px;
+  float: left;
+  margin-left: 20px;
+}
+/*overlay_menu*/
+#overlay_wraps {
+  display: none;
+  z-index: 9999px;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(19,33,66,.9);
+}
+
+/*close_btn*/
+.close_btn > a {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  color: white;
+}
+
+.close_btn > a > i {
+  font-size: 30px;
+  color: rgb(218,237,241);
+
+}
+
+.overlay_logo {
+position: absolute;
+top: 30px;
+left: 110px;
+text-indent: -999px;
+}
+
+.overlay_logo h1 {
+width: 900px;
+height: 200px;
+background: url('img/overlay.png')  no-repeat;
+}
+
+.overlay_menu {
+position: absolute;
+top: 150px;
+left: 300px;
+}
+
+.overlay_menu > li {
+  margin-top: 25px;
+}
+
+.overlay_menu > li >a {
+  font-size: 27px;
+  color:  rgb(236,86,143);
+
+}
+
+.overlay_menu > li >a:hover {
+    color:  rgb(236,86,143, .8);
+}
+
+.overlay_menu > li > ul.overlay_sub {
+  overflow: hidden;
+}
+
+.overlay_menu > li > ul.overlay_sub li {
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+
+.overlay_menu > li > ul.overlay_sub a {
+  color: rgb(218,237,241);
+}
+
+.overlay_menu > li > ul.overlay_sub a:hover {
+  color: rgb(218,237,241,.8);
+}
