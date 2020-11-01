@@ -396,23 +396,29 @@ float: right;
 }
 
 .all > ul >li> img {
+  border: 1px solid red;
   position: relative;
 
 }
 
 .all_txt {
  position: absolute;
- top: 550px;
+ top: 520px; /*220*/
  left: 50px;
   width: 200px;
-  height: 65px;
+  height: 100px;
   background-color: rgb(216, 235, 238, .6);
   border-radius: 0 0 10px 10px;
   color: rgb(19,33,66);
-  padding: 10px;
+  padding: 30px 10px 10px 0;
+  color: rgb(236,86,143);
+  font-size: 17px;
 }
 
+.sss {
+  border: 1px solid red;
 
+}
 
 /*footer*/
 footer {

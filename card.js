@@ -18,12 +18,12 @@ $(document).ready(function () {
  });
 
 
-//스크롤바 위치가져오//
+//사이드메뉴//
 
 $(window).scroll(function() {
 
   var height = $(document).scrollTop();
-  console.log(height);
+  //console.log(height);
 
    if(height > '900' && height < '2760') {
      $('.right_contents').addClass('fixedP');
@@ -32,10 +32,6 @@ $(window).scroll(function() {
    }
 
 });
-
-
-
-
 
 
 
@@ -54,25 +50,32 @@ $(window).scroll(function() {
 
  },2000);
 
+ //탭박스//
+ $('.tab_box div:gt(0)').hide();
 
-//탭박스//
-$('.tab_box div:gt(0)').hide();
+ var nn;
 
-var nn;
+ $('.tab li').click(function() {
 
-$('.tab li').click(function() {
+   nn = $(this).index();
 
-  nn = $(this).index();
+   $('.tab li').removeClass('select');
+   $(this).addClass('select');
+   $('.tab li').removeClass('redB');
+   $(this).addClass('redB');
 
-  $('.tab li').removeClass('select');
-  $(this).addClass('select');
-  $('.tab li').removeClass('redB');
-  $(this).addClass('redB');
-
-  $('.tab_box div').hide();
-  $('.tab_box div').eq(nn).show();
-});
+   $('.tab_box div').hide();
+   $('.tab_box div').eq(nn).show();
+ });
 
 
+
+//탭박스 애니메이션//
+
+$('.tab_txt').on('mouseover',function () {
+  $(this).find('.all_txt').stop().animate({'top':'220px'},'easeOutQuart')
+}).on('mouseout', function() {
+  $(this).find('.all_txt').stop().animate({'top':'520px'},'easeOutQuart' )
+})
 
 });
