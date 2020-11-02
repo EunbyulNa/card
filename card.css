@@ -396,14 +396,13 @@ float: right;
 }
 
 .all > ul >li> img {
-  border: 1px solid red;
   position: relative;
 
 }
 .tab_txt {
   width: 200px;
-  height: 316px; 
-} 
+  height: 316px;
+}
 .all_txt {
  position: absolute;
  top: 520px; /*220*/
