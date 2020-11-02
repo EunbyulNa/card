@@ -400,7 +400,10 @@ float: right;
   position: relative;
 
 }
-
+.tab_txt {
+  width: 200px;
+  height: 316px; 
+} 
 .all_txt {
  position: absolute;
  top: 520px; /*220*/
