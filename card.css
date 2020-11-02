@@ -95,22 +95,25 @@ ul.main_nav > li > a:hover {
 ul.main_util {
   float: right;
 }
+ul.main_util li {
+  display: inline-block;
+}
 
-ul.main_util > a {
+ul.main_util > li > a {
   padding: 0 10px;
   line-height: 70px;
   color: rgb(19,33,66,.7);
 }
 
-ul.main_util > a:hover {
+ul.main_util > li > a:hover {
   color: #132142;
 }
 
-ul.main_util > a > i {
+ul.main_util >  li > a > i {
   color: #132142;
 }
 
-ul.main_util > a > i:hover {
+ul.main_util > li > a > i:hover {
   color: rgb(19,33,66,.7);
 }
 
@@ -186,13 +189,6 @@ float: left;
 }
 
 
-
-
-
-
-
-
-
 /*main_articles*/
 #main_articles {
 overflow: hidden;
@@ -251,7 +247,6 @@ margin-bottom: 60px;
 }
 
 /*right_contents*/
-
 
 #main_articles{
   position: relative;
