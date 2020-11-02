@@ -655,7 +655,7 @@ padding-top: 30px;
 /*overlay_menu*/
 #overlay_wraps {
   display: none;
-  z-index: 9999px;
+  z-index: 9999;
   position: absolute;
   top:0;
   left: 0;
